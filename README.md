@@ -23,9 +23,9 @@
 ```bash
 curl -s https://raw.githubusercontent.com/simon-project/check_cms/refs/heads/main/check_cms.sh | { content=$(cat); echo "$content" | md5sum | grep -q 941b189275ae7f42c23c719b909384ce && echo "$content" | bash || echo -e "\n\nMD5 checksum mismatch, probably script upgraded. Go to https://raw.githubusercontent.com/simon-project/check_cms/ for get new cmd"; }
 
-bash check_cms.sh
-
 ```
+
+Как можно видеть, запуск выполняется без сохранения скрипта на сервере. Для надежности присутствует проверка md5.
 
 Скрипт мало тестировался, поэтому могут быть ошибки при определении CMS. 
 
