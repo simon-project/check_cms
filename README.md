@@ -21,7 +21,7 @@
 Просто запускаем из нужного каталога команду
 
 ```bash
-curl -s https://raw.githubusercontent.com/simon-project/check_cms/refs/heads/main/check_cms.sh | { content=$(cat); echo "$content" | md5sum | grep -q 941b189275ae7f42c23c719b909384ce && echo "$content" | bash || echo -e "\n\nMD5 checksum mismatch, probably script upgraded. Go to https://raw.githubusercontent.com/simon-project/check_cms/ for get new cmd"; }
+curl -s https://raw.githubusercontent.com/simon-project/check_cms/refs/heads/main/check_cms.sh | { content=$(cat); echo "$content" | md5sum | grep -q ae7e4379e7786d46a5d325d8920b51c7 && echo "$content" | bash || echo -e "\n\nMD5 checksum mismatch, probably script upgraded. Go to https://raw.githubusercontent.com/simon-project/check_cms/ for get new cmd"; }
 
 ```
 
